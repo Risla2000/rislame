@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+    *{
+        font-family: 'Spline Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    body{
+        background-color:white;
+    }
+    header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(223, 223, 223);
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    header .logo{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: blue;
+    }
+ 
+    .navbar a{
+        font-size: 20px;
+        color: black;
+        padding: 20px;
+    }
+    header .navbar a:hover{
+        border: 1px solid blue;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: blue;
+    	transition: .5s ease;
+    }
+    .info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: blue;
+    
+}
+
+.info p{
+    color: #555;
+    line-height: 22px;
+}
+
+.info a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.image img{
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image:hover .girl{
+    left: 45%;
+}
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">Risla Rasmy</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="info">
+        <h1>I'm Risla<span> Rasmy</span></h1>
+        <p>This is my official Portfolio website to showcase my 
+            all works related to <br> web development and ui design. </p>
+        
+    </div>
+    <div class="image">
+        <img src="image/s.png" class="girl">
+    </div>
+</body>
+</html>

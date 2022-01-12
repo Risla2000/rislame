@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+    *{
+        font-family: 'Spline Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+.contact-section h1{
+    margin: 10px;
+    font-size: 50px;
+  text-align: center;
+  color: blue;
+  padding-bottom: 30px;
+}
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.contact-form-text:focus{
+  border-radius: 20px;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 200px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+</style>
+<body>
+    <div class="contact-section">
+
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="index.html" method="post">
+          <input type="text" class="contact-form-text" placeholder="Your name">
+          <input type="email" class="contact-form-text" placeholder="Your email">
+          <input type="text" class="contact-form-text" placeholder="Your phone">
+          <textarea class="contact-form-text" placeholder="Your message"></textarea>
+          <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+      </div>
+</body>
+</html>
